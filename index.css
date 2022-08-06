@@ -329,7 +329,7 @@ i {
   border-bottom: 2px solid black;
 }
 
-.input-box span {
+.input-box label {
   font-size: 20px;
 }
 
@@ -351,6 +351,10 @@ i {
 .submit-btn:hover {
   box-shadow: 0 0 15px rgb(53, 154, 255);
   color: dodgerblue;
+}
+
+.hide {
+  display: none;
 }
 
 @media screen and (max-device-width: 1250px) {
