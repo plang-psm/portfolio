@@ -183,20 +183,22 @@
   <div class="contact-content">
     <form action="https://formsubmit.co/4769f29dfd231486380898f2c73c57ee" method="POST"
     id='contact' class="contact-form">
+
+    <input type="hidden" name="_next" value="https://plang-psm.github.io/portfolio/success.html">
       <h3>Contact me</h3>
       <div class="input-box">
-        <input type="text" name="name" id="" >
-        <label>Full Name</label>
+        <input type="text" name="name" value="" required >
+        <label for='name'>Full Name</label>
       </div>
     
       <div class="input-box">
-        <input type="text" name="email" id="" >
-        <label>Email</label>
+        <input type="text" name="email" required >
+        <label for='email'>Email</label>
       </div>
     
       <div class="input-box">
         <textarea name='message' required='required'></textarea>
-        <label>Type your message here</label>
+        <label for='message'>Type your message here</label>
       </div>
     
       <input type="submit" name='' value='Send' class='submit-btn'>

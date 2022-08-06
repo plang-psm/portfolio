@@ -11,36 +11,18 @@ nav {
   justify-content: center;
   width: auto;
   height: 65px;
-  /* margin-top: 10px; */
   align-items: center;
   font-size: 35px;
   margin: 0 50px;
 }
 
 .logo {
-  /* background-color: aqua; */
   flex-grow: 1;
   margin-left: 15px;
   font-weight: 800;
 }
 
-/* .menu-nav {
-  background-color: red;
-  flex-grow: 2;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style-type: none;
-  font-size: 20px;
-}
-
-.menu-nav,
-li {
-  margin: 0 25px;
-} */
-
 .menu-contact {
-  /* background-color: green; */
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
@@ -56,7 +38,6 @@ i {
   margin: 15%;
   display: flex;
   flex-direction: column;
-  /* background-color: aqua; */
   align-items: flex-start;
   font-size: 40px;
   margin-bottom: 20%;
@@ -86,8 +67,6 @@ i {
 }
 
 .about-container {
-  /* height: 600px; */
-  /* background-color: #1891ff; */
   background-color: dodgerblue;
   padding: 25px;
 }
@@ -96,7 +75,6 @@ i {
 }
 
 .about-info {
-  /* margin: 0 1%; */
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -133,13 +111,6 @@ i {
   margin-top: 10%;
   margin-bottom: 5%;
 }
-
-/* .languages-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 
 .language-header {
   text-align: center;
@@ -179,10 +150,6 @@ i {
   margin: 5% 0;
 }
 
-/* .projects-header {
-  margin: 5% 0;
-} */
-
 .projects {
   max-width: 100%;
   display: flex;
@@ -194,10 +161,6 @@ i {
 }
 
 .project-display {
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
   width: 400px;
   height: 350px;
   background-size: cover;
@@ -214,7 +177,6 @@ i {
 }
 
 .project-display img {
-  /* margin: 5px; */
   width: 400px;
   height: 250px;
 }
@@ -289,21 +251,9 @@ i {
   margin: 50px 0;
 }
 
-/* .contact-form {
-  margin: 0% 30%;
-
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .contact-form form {
-  height: 50px;
-} */
-
 .input-box {
   position: relative;
   width: 100%;
-  /* margin-top: 10px; */
 }
 
 .contact-form {
@@ -341,7 +291,6 @@ i {
 .social-icons i:hover,
 .menu-contact i:hover {
   color: dodgerblue;
-  /* box-shadow: 0 0 15px rgb(53, 154, 255); */
 }
 
 .submit-btn {

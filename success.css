@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica Neue, sans-serif;
+  color: black;
+}
+
+.content h1 {
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+.content h3 {
+  font-size: 55px;
+  margin-top: 0;
+}
+
+.content h4 {
+  margin-top: 10px;
+  font-size: 35px;
+  color: dodgerblue;
+}
+a:link {
+  text-decoration: none;
+}
+
+.content button {
+  margin-top: -15px;
+  height: 50px;
+  font-size: 25px;
+  padding: 0px 25px;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.content button:hover {
+  border: none;
+  color: #7ebeff;
+  box-shadow: 0 0 10px #7ebeff;
+}
