@@ -190,6 +190,10 @@ i {
   font-weight: bolder;
 }
 
+.project-p {
+  font-size: small;
+}
+
 .project-btns {
   margin-top: -125px;
   margin-bottom: 125px;
@@ -210,6 +214,10 @@ i {
   box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
   filter: grayscale(50%);
   transition: all 0.5s;
+}
+
+.project-display:hover .project-p {
+  display: none;
 }
 
 .project-display:hover .project-btns button {
@@ -345,6 +353,20 @@ i {
 }
 
 @media screen and (max-device-width: 545px) {
+  .logo {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    align-items: center;
+  }
+  .menu-contact,
+  i {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 15px;
+    align-items: center;
+  }
+
   nav {
     margin-top: 5px;
     display: flex;
@@ -352,6 +374,19 @@ i {
     justify-content: center;
     align-items: center;
   }
+
+  .heading h1 {
+    font-size: 35px;
+  }
+  .heading h2 {
+    font-size: 20px;
+  }
+
+  .contact-btn {
+    height: 50px;
+    font-size: 20px;
+  }
+
   .language-header h2,
   .contact-container h2,
   .about-info h2 {
@@ -360,12 +395,6 @@ i {
 }
 
 @media screen and (max-device-width: 464px) {
-  .heading h1 {
-    font-size: 35px;
-  }
-  .heading h2 {
-    font-size: 20px;
-  }
   .about {
     margin: 1% 0;
   }
