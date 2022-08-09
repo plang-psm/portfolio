@@ -10,225 +10,26 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/5e57e3c0dc.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="index.css" />
-    <title>plang-psm</title>
+    <title>Pwd Generator</title>
   </head>
   <body>
-    <!-- Nav bar -->
-    <nav>
-      <div class="logo">PLANG-PSM</div>
-      <div class="menu-contact">
-        <a href="https://github.com/plang-psm" target="_blank"
-        ><i class="fa-brands fa-github" style="font-size: 35px" ><span class='hide'>Github Icon</span></i
-      ></a>
-      <a href="https://www.linkedin.com/in/plang-psm/" target="_blank"
-        ><i class="fa-brands fa-linkedin" style="font-size: 35px" ><span class='hide'>Linkedin Icon</span></i
-      ></a>
-      <a href="#contact"
-        ><i class="fa-solid fa-envelope" style="font-size: 35px" ><span class='hide'>Contact Icon</span></i
-      ></a>
-      </div>
-    </nav>
-
-    <!-- Header -->
-    <div class="heading-container">
-      <div class="heading">
-        <h1>Phillip Sanchez</h1>
-        <h2>Jr. Front-end Developer</h2>
-        <h2>Computer Science Student</h2>
-        <a href="#contact"
-          ><button class="contact-btn">Available for hire!</button></a
-        >
+    <div class="content-container">
+      <div class="heading-container">
+        <h1>
+          Generate a <br />
+          <span class="green">random password</span>
+        </h1>
+        <h3>Never use an insecure password again.</h3>
+        <button class="generate-btn" onclick="genPwds()">
+          Generate passwords
+        </button>
       </div>
     </div>
-
-    <!-- About me -->
-    <div class="about-container">
-      <div class="about">
-        <div class="about-info">
-          <h2>Welcome!</h2>
-          <p>
-            Hey, I'm <span>Phillip!</span> I was born and raised in
-            <span>Los Angeles</span> and what better way to design my page than
-            to use Dodger colors! Go Dodgers!<br />
-            <br />
-            I have a passion for design and I am currently working to become a
-            <span>Frontend Developer</span>. Under Scrimba's Frontend Developer
-            Career Path. I've jumped into projects using languages such as
-            <span>HTML</span>, <span>CSS</span>, <span>JAVASCRIPT</span>, and
-            <span>REACT JS</span>.
-            <br />
-            <br />
-            Aside from these projects, I am also studying
-            <span>Computer Science</span> at Western Governors University where
-            I am expected to graduate in July 2023. Through my university's
-            program, I've been able to work on some projects in languages such
-            as <span>JAVA</span>, <span>JAVA FX</span>,
-            <span>SCENE BUILDER</span>, and <span>MySQL</span>.
-            <br />
-            <br />
-            A bit about me, I love sports with a passion. I am a big fan of the
-            Clippers, Bills, Real Madrid, Dodgers, and the LA Kings. Aisde from
-            sports, I enjoy spending time with my three very human-like dogs
-            Lola, Kiki and Kash.
-            <br />
-            <br />
-            Enough about me, lets jump into the main event!
-          </p>
-        </div>
-      </div>
+    <div class="display-container">
+      <p id="first-pwd-el" class="firstPwd" onclick="copyText()"></p>
+      <p id="second-pwd-el" class="secondPwd"></p>
     </div>
-
-    <!-- Display languages I've worked with -->
-    <div class="languages-container">
-      <div class="language-header">
-        <!-- <span class='language-border'>I've worked with</span> -->
-        <h2>Languages<br> Frameworks<br> & Tools<br>  </h2>
-      </div>
-      <div class="language-tags">
-        <p class="tag"><span class="tag-span">HTML</span></p>
-        <p class="tag"><span class="tag-span">CSS</span></p>
-        <p class="tag"><span class="tag-span">JAVASCRIPT</span></p>
-        <p class="tag"><span class="tag-span">REACT JS</span></p>
-        <p class="tag"><span class="tag-span">BOOTSTRAP</span></p>
-        <p class="tag"><span class="tag-span">TAILWIND CSS</span></p>
-        <p class="tag"><span class="tag-span">JAVA</span></p>
-        <p class="tag"><span class="tag-span">MYSQL</span></p>
-        <p class="tag"><span class="tag-span">SCENEBUILDER</span></p>
-        <p class="tag"><span class="tag-span">JAVA FX</span></p>
-      </div>
-    </div>
-
-    <!-- Display projects -->
-    <div class="projects-container">
-      <div class="projects">
-
-        <!-- Meme generator -->
-        <div  class="project-display">
-          <img src="memegen.jpg" alt="Image of meme project"/>
-          <div class='project-btns'>
-            <a href="https://plang-psm.github.io/meme-generator/" target='_blank'><button>Live</button></a>
-            <a href="https://github.com/plang-psm/meme-generator" target='_blank'><button>Github</button></a>
-          </div>
-          <p class='project-tags'>REACT JS | CSS</p>
-          <h2>Meme Generator</h2>
-          <p class='project-p'>Web only</p>
-        </div>
-        
-        <!-- Tenzies -->
-        <div  class="project-display">
-          <img src="tenzies.jpg" alt="Image of tenzies project"/>
-          <div class='project-btns'>
-            <a href="https://plang-psm.github.io/tenzies/" target='_blank'><button>Live</button></a>
-            <a href="https://github.com/plang-psm/tenzies" target='_blank'><button>Github</button></a>
-          </div>
-          <p class='project-tags'>REACT JS | CSS</p>
-          <h2>Tenzies</h2>
-          <p class='project-p'>Web only</p>
-        </div>
-
-        <div  class="project-display">
-          <img src="pwg-gen.jpg" alt="Image of password generator project"/>
-          <div class='project-btns'>
-            <a href="https://plang-psm.github.io/password-generator/" target='_blank'><button>Live</button></a>
-            <a href="https://github.com/plang-psm/password-generator" target='_blank'><button>Github</button></a>
-          </div>
-          <p class='project-tags'> HTML | CSS </p>
-          <h2>Password Generator</h2>
-        </div>
-        <!-- Hometown -->
-
-        <!-- Travel App -->
-        <div  class="project-display">
-          <img src="travel-app.jpg" alt="Image of travel project"/>
-          <div class='project-btns'>
-            <a href="https://plang-psm.github.io/travel-app/" target='_blank'><button>Live</button></a>
-            <a href="https://github.com/plang-psm/travel-app" target='_blank'><button>Github</button></a>
-          </div>
-          <p class='project-tags'>REACT JS | CSS</p>
-          <h2>Travel App</h2>
-          <p class='project-p'>Web only</p>
-        </div>
-
-        <!-- Blackjack -->
-        <div  class="project-display">
-          <img src="blackjack.jpg" alt="Image of blackjack project"/>
-          <div class='project-btns'>
-            <a href="https://plang-psm.github.io/blackjack/" target='_blank'><button>Live</button></a>
-            <a href="https://github.com/plang-psm/blackjack" target='_blank'><button>Github</button></a>
-          </div>
-          <p class='project-tags'> HTML | CSS | JS</p>
-          <h2>Blackjack</h2>
-          <p class='project-p'>Web only</p>
-        </div>
-
-        <!-- Score counter -->
-        <div class="project-display">
-          <img src="scorecounter.jpg" alt="Image of counter project" />
-          <div class='project-btns'>
-            <a href="https://plang-psm.github.io/score-counter/" target='_blank'><button>Live</button></a>
-            <a href="https://github.com/plang-psm/score-counter" target='_blank'><button>Github</button></a>
-          </div>
-          <p class='project-tags'> HTML | CSS | JS</p>
-          <h2>Score Counter</h2>
-          <p class='project-p'>Web only</p>
-        </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Display contact information -->
-    <div class="contact-container">
-  <h2>Lets keep this going?</h2>
-
-  <div class="contact-content">
-    <form action="https://formsubmit.co/4769f29dfd231486380898f2c73c57ee" method="POST"
-    id='contact' class="contact-form">
-
-    <input type="hidden" name="_next" value="https://plang-psm.github.io/portfolio/success.html">
-      <h3>Contact me</h3>
-      <div class="input-box">
-        <input type="text" name="name" id='name' required >
-        <label for='name'>Full Name</label>
-      </div>
-    
-      <div class="input-box">
-        <input type="text" name="email" id='email' required >
-        <label for='email'>Email</label>
-      </div>
-    
-      <div class="input-box">
-        <textarea name='message' id='message' required='required'></textarea>
-        <label for='message'>Type your message here</label>
-      </div>
-    
-      <input type="submit" name='' value='Send' class='submit-btn'>
-
-      <div class="social-icons">
-        <a href="https://github.com/plang-psm" target="_blank"
-        ><i class="fa-brands fa-github" style="font-size: 35px" ><span class='hide'>Github Icon</span></i
-      ></a>
-      <a href="https://www.linkedin.com/in/plang-psm/" target="_blank"
-        ><i class="fa-brands fa-linkedin" style="font-size: 35px" ><span class='hide'>Linkedin Icon</span></i
-      ></a>
-      <a href="#contact"
-        ><i class="fa-solid fa-envelope" style="font-size: 35px" ><span class='hide'>Contact Icon</span></i
-      ></a>
-      </div>
-    </form>
-
-   
-  </div>
-
-  </div>
-
-
-
     <script src="index.js"></script>
   </body>
 </html>
