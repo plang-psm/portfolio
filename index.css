@@ -43,6 +43,13 @@ i {
   margin-bottom: 20%;
 }
 
+.heading h1 {
+  font-size: 100px;
+}
+.heading h2 {
+  font-size: 75px;
+}
+
 .heading h1,
 .heading h2 {
   text-shadow: 5px 5px 5px #7ebeff;
@@ -71,7 +78,7 @@ i {
   padding: 25px;
 }
 .about {
-  margin: 3% 15%;
+  margin: 3% 12%;
 }
 
 .about-info {
@@ -93,14 +100,14 @@ i {
 
 .about-info p {
   color: white;
-  font-size: 20px;
+  font-size: 26px;
   text-align: center;
 }
 
 .about-info span {
   color: #e3f1ff;
   font-weight: 800;
-  font-size: large;
+  font-size: 26px;
   background-color: black;
   padding: 4px;
 }
@@ -108,20 +115,19 @@ i {
 .languages-container {
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
-  margin-bottom: 5%;
+  margin-top: 7%;
+  margin-bottom: 2%;
 }
 
 .language-header {
-  text-align: center;
-  font-size: xx-large;
+  text-align: start;
+  margin-left: 20px;
   margin-bottom: 4%;
+  /* font-size: 100px; */
 }
 
 .language-header h2 {
   font-size: 100px;
-  text-align: end;
-  margin-right: 20px;
 }
 
 .language-border {
@@ -129,7 +135,7 @@ i {
 }
 
 .language-tags {
-  margin-top: 2%;
+  margin: 75px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -139,19 +145,29 @@ i {
 .tag {
   text-align: center;
   flex: 1 0 25%;
-  padding: 25px;
+  padding: 35px;
 }
 
 .tag-span {
   color: #e3f1ff;
   font-weight: 800;
-  font-size: x-large;
+  font-size: xx-large;
   background-color: black;
   padding: 10px;
 }
 
 .projects-container {
   margin: 5% 0;
+}
+
+.projects-header {
+  text-align: end;
+  margin-bottom: 4%;
+  margin-right: 20px;
+}
+
+.projects-header h2 {
+  font-size: 100px;
 }
 
 .projects {
@@ -247,6 +263,7 @@ i {
   max-width: 100%;
   height: 700px;
   background-color: dodgerblue;
+  margin-bottom: 50px;
 }
 
 .contact-container h2 {
@@ -322,29 +339,53 @@ i {
   .contact-form {
     width: 55%;
   }
+
+  .about {
+    margin: 1% 0;
+  }
+  .heading h1 {
+    font-size: 75px;
+  }
+  .heading h2 {
+    font-size: 50px;
+  }
 }
 
 @media screen and (max-device-width: 944px) {
-  .heading h1,
-  .heading h2 {
-    font-size: 40px;
-  }
-
-  .about {
-    margin: 3% 10%;
-  }
 }
 
 @media screen and (max-device-width: 888px) {
+  .heading h1 {
+    font-size: 65px;
+  }
+  .heading h2 {
+    font-size: 35px;
+  }
   .projects {
     justify-content: center;
   }
 }
 
-@media screen and (max-device-width: 620px) {
-  .heading h1,
+@media screen and (max-device-width: 675px) {
+  .heading h1 {
+    font-size: 55px;
+  }
   .heading h2 {
-    font-size: 30px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-device-width: 620px) {
+  .heading h1 {
+    font-size: 50px;
+  }
+  .heading h2 {
+    font-size: 20px;
+  }
+
+  .about-info p,
+  .about-info span {
+    font-size: 20px;
   }
 
   .contact-form {
@@ -353,6 +394,9 @@ i {
 }
 
 @media screen and (max-device-width: 545px) {
+  .heading h1 {
+    font-size: 40px;
+  }
   .logo {
     margin: 0;
     padding: 0;
@@ -375,13 +419,6 @@ i {
     align-items: center;
   }
 
-  .heading h1 {
-    font-size: 35px;
-  }
-  .heading h2 {
-    font-size: 20px;
-  }
-
   .contact-btn {
     height: 50px;
     font-size: 20px;
@@ -389,14 +426,15 @@ i {
 
   .language-header h2,
   .contact-container h2,
-  .about-info h2 {
+  .about-info h2,
+  .projects-header h2 {
     font-size: 75px;
   }
 }
 
 @media screen and (max-device-width: 464px) {
-  .about {
-    margin: 1% 0;
+  .heading h1 {
+    font-size: 35px;
   }
   .about-info {
     padding: 2px;
@@ -408,7 +446,17 @@ i {
   }
   .language-header h2,
   .contact-container h2,
-  .about-info h2 {
+  .about-info h2,
+  .projects-header h2 {
     font-size: 50px;
+  }
+}
+
+@media screen and (max-device-width: 368px) {
+  .heading h1 {
+    font-size: 33px;
+  }
+  .heading h2 {
+    font-size: 19px;
   }
 }
