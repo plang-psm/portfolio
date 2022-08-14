@@ -216,8 +216,7 @@ i {
 }
 
 .project-btns button {
-  height: 35px;
-  width: 100px;
+  padding: 10px 25px;
   font-size: larger;
   top: 20px;
   right: 50px;
@@ -228,7 +227,6 @@ i {
 .project-display:hover {
   transform: scale(1.25);
   box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-  filter: grayscale(50%);
   transition: all 0.5s;
 }
 
@@ -242,9 +240,7 @@ i {
   width: 120px;
   font-size: larger;
   padding: 10px 30px;
-  top: 50px;
-  right: 50px;
-  background-color: black;
+  background-color: blue;
   border: none;
   border-radius: 25px;
   margin-right: 20px;
@@ -255,7 +251,10 @@ i {
 }
 
 .project-btns button:hover {
+  display: block;
+  background-color: #7ebeff;
   box-shadow: 0 0 15px rgb(53, 154, 255);
+  filter: none;
 }
 
 .contact-container {
