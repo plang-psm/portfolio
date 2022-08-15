@@ -494,6 +494,9 @@ i {
   .about-info span {
     font-size: 15px;
   }
+  .about-info span {
+    padding: 2px;
+  }
 
   @media screen and (max-device-width: 414px) {
     .heading h1,
