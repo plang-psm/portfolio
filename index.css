@@ -183,8 +183,8 @@ i {
 
 .project-display {
   display: relative;
-  width: 400px;
-  height: 350px;
+  width: 600px;
+  height: 550px;
   background-size: cover;
   padding: 0;
   margin-bottom: 4%;
@@ -204,8 +204,8 @@ i {
 
 .project-img {
   position: block;
-  width: 400px;
-  height: 250px;
+  width: 600px;
+  height: 450px;
 }
 
 .image-overlay {
@@ -216,8 +216,8 @@ i {
   align-items: center;
   top: 0;
   left: 0;
-  width: 400px;
-  height: 250px;
+  width: 600px;
+  height: 450px;
   background: rgba(0, 0, 0, 0.6);
   color: white;
   opacity: 0;
@@ -338,6 +338,40 @@ i {
 
 .hide {
   display: none;
+}
+
+@media screen and (max-device-width: 2225px) {
+  .project-display {
+    width: 500px;
+    height: 450px;
+  }
+
+  .project-img {
+    width: 500px;
+    height: 350px;
+  }
+
+  .image-overlay {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-device-width: 1777px) {
+  .project-display {
+    width: 400px;
+    height: 350px;
+  }
+
+  .project-img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .image-overlay {
+    width: 400px;
+    height: 250px;
+  }
 }
 
 @media screen and (max-device-width: 1250px) {
