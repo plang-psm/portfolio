@@ -39,7 +39,7 @@ The portfolio is a static page that consists of 5 main sections including the he
   - [ ] Automatic Day/Night mode
 
 ## Launch
-You can display the project and its code here:
+You can open the project here:
 [Portfolio](https://plang-psm.github.io/portfolio/)
 
 ## Contact
