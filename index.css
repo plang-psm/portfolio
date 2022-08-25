@@ -206,6 +206,7 @@ i {
   position: block;
   width: 600px;
   height: 450px;
+  object-fit: cover;
 }
 
 .image-overlay {
@@ -400,7 +401,7 @@ i {
   }
 }
 
-@media screen and (max-device-width: 967px) {
+@media screen and (max-device-width: 889px) {
   .heading h1,
   .language-header h2,
   .contact-container h2,
