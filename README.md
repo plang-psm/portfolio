@@ -34,8 +34,8 @@ The portfolio is a static page that consists of 5 main sections including the he
 - [X] CSS Styling
     - [X] Responsive design
 - [X] JavaScript
-- [ ] Project description page
-- [ ] Reformat code
+- [X] Project description page
+- [X] Reformat code
   - [ ] Automatic Day/Night mode
 
 ## Launch
