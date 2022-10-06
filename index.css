@@ -253,7 +253,6 @@ button:hover,
 /* -------------- Projects structure  -------------- */
 .projects-container {
   padding: 10em 1em;
-  /* height: 100vh; */
 }
 
 .project-header {
@@ -280,6 +279,7 @@ button:hover,
   text-align: center;
   overflow: hidden;
   transition: 0.5s;
+  box-shadow: 0 0 .5px rgb(0, 0, 0.1);
 }
 
 .project-img,
