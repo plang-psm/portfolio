@@ -1,6 +1,11 @@
+import projects from "./data.js";
+
 const textHTML = document.getElementById('text');
 const fades = document.querySelectorAll('.fade-in');
 const slides = document.querySelectorAll('.slide-in');
+const projectsHTML = document.getElementById('projects');
+
+// console.log(projects);
 
 const words = [
     'I create things...',
@@ -50,11 +55,48 @@ function deleteNow() {
         deleteLoop();
     }
 
+    // Renders projects.
+function renderProjects(data) {
+    let html = '';
+    for (let project of data) {
+        html += `<div class="project-display">
+
+        <div class="image">
+          <img
+            class="project-img"
+            src=${project.image}
+            alt=${project.alt}
+          />
+    
+          <div class="image-overlay image-overlay-blur">
+            <a
+              href=${project.live_link}
+              target="_blank"
+              class="project-link"
+              >Live</a
+            >
+            <a
+              href=${project.github_link}
+              target="_blank"
+              class="project-link"
+              >Github</a
+            >
+          </div>
+          <h3>${project.name}</h3>
+          <p class="project-tags">${project.languages}</p>
+        </div>
+      </div>`
+    }
+    projectsHTML.innerHTML = html;
+}
+renderProjects(projects);
+
+
 // Fade and Slide observer
 // Set when animation will start
 const appearOptions = {
     threshold: 0,
-    rootMargin: "0px 0px -250px 0px"
+    rootMargin: "0px 0px -200px 0px"
 };
 // When entry target is scroll, add appear to trigger animation
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
