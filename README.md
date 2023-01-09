@@ -20,7 +20,8 @@
 * [Contact](#contact)
 * [Resources](#resources)
 
-![portfolio](https://user-images.githubusercontent.com/101952500/185810134-97a21988-aac7-4b86-9f54-4b244f22977e.jpg)
+<img width="1524" alt="portfolio image" src="https://user-images.githubusercontent.com/101952500/211410709-fe4c6535-e74c-4d4f-b710-223c048064cd.png">
+
 
 ## Description
 The portfolio is a static page that consists of 5 main sections including the heading, about me, skils, projects I've worked on, and a contact form. It was intended for those curious about who I am and what I've worked on. The site also contains links to my GitHub for a deeper dive into my projects and my LinkedIn to connect with!
