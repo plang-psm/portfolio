@@ -16,14 +16,6 @@ const projects = [
     github_link: "https://github.com/plang-psm/quizzical"
   },
   {
-    name: 'Tenzies',
-    languages: 'React JS | CSS',
-    image: 'images/tenzies.jpg',
-    alt: "Image of tenzies project",
-    live_link: "https://plang-psm.github.io/tenzies/",
-    github_link: "https://github.com/plang-psm/tenzies"
-  },
-  {
     name: 'Unit Converter',
     languages: 'HTML | CSS | JS',
     image: 'images/unitconverter.jpg',
@@ -38,6 +30,14 @@ const projects = [
     alt: "Image of password-generator project",
     live_link: "https://plang-psm.github.io/password-generator/",
     github_link: "https://github.com/plang-psm/password-generator"
+  },
+  {
+    name: 'WGU Parcel Service',
+    languages: 'Python',
+    image: 'images/wgups.jpg',
+    alt: "Image of WGUPS project",
+    live_link: "https://github.com/plang-psm/wgu-parcel-service",
+    github_link: "https://github.com/plang-psm/wgu-parcel-service"
   },
   {
     name: 'Appointment Manager',

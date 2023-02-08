@@ -7,15 +7,20 @@
 body{
   margin: 0 auto;
   box-sizing: border-box;
+  max-width: 1300px;
 }
 
 .container {
-  max-width: 1150px;
+  max-width: 1300px;
   margin: 0 auto;
   overflow-x: hidden;
 }
 
 /* -------------- Fonts structure  -------------- */
+h1{
+  font-size: 3.1rem;
+}
+
 h2{
   font-size: 2.7rem;
 }
@@ -50,7 +55,7 @@ label {
 }
 
 p, input, textarea {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .about-info span {
@@ -142,7 +147,8 @@ i {
   color: black;
 }
 
-/* -------------- Heading structure  -------------- */.heading-container {
+/* -------------- Heading structure  -------------- */
+.heading-container {
   height: 100vh;
   margin: 0 1em;
 }
@@ -228,6 +234,10 @@ button:hover,
   margin-top: 2.5em;
 }
 
+.language-header {
+text-align: end;
+}
+
 /* -------------- Tags structure  -------------- */
 .lang-tags {
   max-width: 100%;
@@ -250,9 +260,49 @@ button:hover,
   border-radius: 3px;
 } 
 
+/* -------------- Contributions structure  -------------- */
+
+.contribution-container {
+  padding: 10em 1em;
+}
+
+.contribution-header {
+  text-align: start;
+  margin-bottom: 3em;
+}
+
+.contribution {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contribution-image{
+  max-width: 50%;
+  width: 40%;
+  margin-left: 0;
+}
+
+.cont-image{
+  min-width: 50%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.contribution-information{
+  text-align: center;
+}
+
+.contribution-tags {
+  margin-top: .5em;
+  font-weight: 400;
+}
+
 /* -------------- Projects structure  -------------- */
 .projects-container {
-  padding: 10em 1em;
+  padding: 5em 1em;
 }
 
 .project-header {
@@ -275,7 +325,7 @@ button:hover,
   height: 350px;
   background-size: cover;
   padding: 0;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   text-align: center;
   overflow: hidden;
   transition: 0.5s;
@@ -372,6 +422,15 @@ button:hover,
   margin: .5em auto;
 }
 
+.input-box input {
+  padding: 0 0 0 .5em;
+}
+
+.input-box textarea {
+
+  padding: 1em 0 0 .5em;
+}
+
 .contact-form input {
   height: 60px;
 }
@@ -381,13 +440,15 @@ button:hover,
   height: 150px;
 }
 
+/* -------------- Social Icons structure  -------------- */
+
 .social-icons {
   margin: 0 1em 2em 1em;
   color: black;
   text-align: center;
 }
 .social-icons i {
-  padding: .5em;
+  padding: .2em .5em;
 }
 
 .social-icons i:hover,
@@ -400,7 +461,7 @@ button:hover,
 }
 
 
-/* Responsive desgin */
+/* -------------- Responsive Design  -------------- */
 
 @media (min-width: 500px) {
   .menu-contact i {
@@ -418,9 +479,18 @@ button:hover,
   .contact-btn {
     box-sizing: content-box;
   }
+
+  .contribution {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   .projects {
     justify-content: space-evenly;
   }
+} 
+@media (min-width: 1082px) {
+
 } 
 
 @media (min-width: 1200px) {
