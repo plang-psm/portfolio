@@ -9,7 +9,7 @@ const projectsHTML = document.getElementById('projects');
 
 const words = [
     'I create things...',
-    'Software Developer.',
+    'Software Engineer.',
     'Computer Science 2023.',
     'Addicted to coffee.'
 ]

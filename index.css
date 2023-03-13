@@ -468,7 +468,7 @@ text-align: end;
     padding: .5em;
   }
   .lang-tags {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 } 
 
@@ -489,9 +489,7 @@ text-align: end;
     justify-content: space-evenly;
   }
 } 
-@media (min-width: 1082px) {
 
-} 
 
 @media (min-width: 1200px) {
   .tag-span {
