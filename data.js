@@ -84,7 +84,7 @@ const projects = [
   {
     name: 'WGU Parcel Service',
     languages: ['Python'],
-    image: '/images/wgups.jpg',
+    image: 'images/wgups.jpg',
     alt: 'Image of WGUPS project',
     live_link: 'https://github.com/plang-psm/wgu-parcel-service',
     github_link: 'https://github.com/plang-psm/wgu-parcel-service',
