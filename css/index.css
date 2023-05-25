@@ -1,0 +1,627 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+button a:hover {
+  color: white;
+}
+a:hover {
+  color: red;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/* -------------- Fonts structure  -------------- */
+h1 {
+  font-size: 3.1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.heading h1 {
+  font-size: 2.8rem;
+}
+
+li {
+  list-style: none;
+}
+
+/* Extras */
+
+/* -------------- title desings structure  -------------- */
+.title-design {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* -------------- Hide/Show effect  -------------- */
+.header {
+  color: white;
+  padding: 0.2em;
+}
+
+.hidden-right {
+  opacity: 0;
+  transition: all 2s;
+  filter: blur(5px);
+  transform: translateX(5%);
+}
+
+.hidden-left {
+  opacity: 0;
+  transition: all 2s;
+  filter: blur(5px);
+  transform: translateX(-5%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.highlight {
+  background: linear-gradient(to right, #fff 50%, #000 10%);
+  background-size: 200% 100%;
+  background-position: bottom right;
+  transition: all 3s;
+}
+
+/* -------------- Nav structure  -------------- */
+nav {
+  max-width: 4000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  height: 65px;
+  align-items: center;
+  margin: 0 1em;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  align-items: center;
+}
+.bold {
+  font-weight: 800;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-branding {
+  font-size: 2rem;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.nav-link {
+  transition: 0.3s ease-out;
+  color: rgb(157, 157, 157);
+}
+.nav-link:hover {
+  color: red;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background-color: red;
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    opacity: 95%;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 2em 0;
+  }
+  .nav-menu.active {
+    z-index: 1;
+    left: 0;
+  }
+}
+
+/* -------------- Heading structure  -------------- */
+.heading-container {
+  display: flex;
+  height: 100vh;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.heading h1 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+.heading-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading-hi {
+  font-weight: 300;
+}
+
+.quick a {
+  font-size: 1.2rem;
+  color: red;
+}
+
+.quick a:hover {
+  color: rgba(255, 0, 0, 0.47);
+}
+
+.heading-btn {
+  padding: 15em 0 0 0;
+  text-align: center;
+}
+
+.text-type {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.3em auto 0 auto;
+  align-items: flex-end;
+  background-color: black;
+  padding: 0.5em 1em;
+}
+
+.contact-btn button {
+  box-sizing: content-box;
+}
+
+button,
+.submit-btn {
+  height: 50px;
+  margin: 0.6em auto 0 auto;
+  font-size: 1.3rem;
+  padding: 0.3em 1em;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  text-align: center;
+}
+
+button:hover,
+.submit-btn:hover {
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+/* -------------- About structure  -------------- */
+.about-container {
+  margin: auto;
+  max-width: 650px;
+  height: 100%;
+  padding: 3em 1em;
+}
+.about {
+  margin: 2em 0;
+}
+
+.about-info {
+  text-align: center;
+}
+
+.about-info p {
+  margin-top: 2em;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.about-info span {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -1.2px;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    max-width: 650px;
+    padding: 10em 1em 0 1em;
+  }
+}
+
+/* -------------- Skills structure  -------------- */
+.skills-container {
+  padding: 3em 1em;
+}
+
+.skills-container h3 {
+  margin-top: 2.5em;
+}
+
+.skills-header {
+  text-align: end;
+}
+
+.skills {
+  margin: 2em auto;
+  max-width: 600px;
+}
+
+/* -------------- Tags structure  -------------- */
+
+.skills-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 33.333%;
+  margin: 0.7em 0;
+  font-weight: 350;
+}
+.lang-tag-color {
+  font-size: 1rem;
+  margin: 0.15em;
+  padding: 5px 15px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(174, 229, 255);
+  border-radius: 50px;
+}
+.frame-lib-tag-color {
+  font-size: 1rem;
+  margin: 0.15em;
+  padding: 5px 15px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 190, 190);
+  border-radius: 50px;
+}
+
+.db-tag-color {
+  font-size: 1rem;
+  margin: 0.15em;
+  padding: 5px 15px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(206, 255, 174);
+  border-radius: 50px;
+}
+.tools-tag-color {
+  font-size: 1rem;
+  margin: 0.15em;
+  padding: 5px 15px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(241, 174, 255);
+  border-radius: 50px;
+}
+.other-tag-color {
+  font-size: 1rem;
+  margin: 0.15em;
+  padding: 5px 15px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(240, 240, 183);
+  border-radius: 50px;
+}
+
+.new-tag {
+  background: black;
+  color: white;
+}
+
+/* -------------- Contributions structure  -------------- */
+
+.contribution-container {
+  padding: 3em 1em;
+}
+
+.contribution-header {
+  text-align: start;
+}
+
+.contribution {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vrms,
+.website {
+  margin: 1em 0;
+}
+
+.contribution-projects-images {
+  display: flex;
+  justify-content: space-between;
+}
+.contribution-img-desktop {
+  width: 65%;
+}
+
+.contribution-img-mobile {
+  width: 30%;
+}
+
+.contribution-img-desktop:hover {
+  transform: translateY(-10px);
+  transition: transform 0.25s;
+}
+
+.contribution-img-mobile:hover {
+  transform: translateY(-10px);
+  transition: transform 0.25s;
+}
+.contribution-image {
+  width: 100%;
+  height: 100%;
+}
+
+.cont-image {
+  min-width: 50%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.contribution-information {
+  text-align: center;
+}
+
+.contribution-title {
+  margin: 0.1em 0;
+}
+
+.contribution-position {
+  margin: 0.1em 0;
+  font-size: 1.2rem;
+  font-weight: 350;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links p {
+  padding: 0 1em;
+}
+
+/* -------------- Projects structure  -------------- */
+
+.two {
+  order: 2;
+}
+
+.projects-container {
+  padding: 3em 1em;
+}
+
+.project-header {
+  text-align: end;
+}
+
+.projects {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-display {
+  background-size: cover;
+  padding: 0;
+  margin: 4em 0;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.project-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.image {
+  margin: auto;
+  min-height: 300px;
+  height: 100%;
+  max-width: 525px;
+  position: relative;
+  object-fit: cover;
+}
+
+.project-img,
+.image-overlay,
+.image-overlay-blur {
+  max-width: 100%;
+}
+
+.image-overlay {
+  width: 100%;
+}
+
+.image-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image-overlay-blur {
+  backdrop-filter: blur(5px);
+}
+
+.image-overlay > * {
+  transform: translateY(40px);
+  transition: transform 0.25s;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+}
+
+.image-overlay:hover > * {
+  transform: translateY(0);
+}
+
+.contribution-body {
+  font-size: 1.1rem;
+  font-weight: 320;
+  line-height: 25px;
+}
+
+.project-tags {
+  margin-top: 0.5em;
+  font-weight: 400;
+}
+
+.project-link {
+  text-decoration: none;
+  margin: 0 2em;
+  padding: 10px 35px;
+  font-weight: 400;
+  top: 20px;
+  right: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+.project-link:hover {
+  background-color: rgba(36, 36, 36, 0.78);
+  color: white;
+  border: 1px solid white;
+}
+
+@media (min-width: 560px) {
+  .project-display {
+    max-width: 560px;
+  }
+  .image {
+  }
+}
+
+@media (min-width: 768px) {
+  .project-display {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .image {
+    width: 50%;
+  }
+  .contribution-information {
+    width: 45%;
+  }
+}
+
+.top-button {
+  text-align: center;
+}
+
+/* -------------- Footer Design  -------------- */
+.footer {
+  width: 100%;
+  padding: 3em;
+  background-color: black;
+  color: white;
+}
+
+.footer p {
+  font-size: 1.1rem;
+}
+
+.page-nav-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.foot-links {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.foot-links a {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+.author {
+  text-align: center;
+}
