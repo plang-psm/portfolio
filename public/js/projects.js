@@ -1,4 +1,4 @@
-import projects from '../data.js';
+import projects from '../data';
 const projectsHTML = document.getElementById('projects');
 
 // Renders projects.
