@@ -1,5 +1,3 @@
-// import projects from './data.js';
-
 const textHTML = document.getElementById('text');
 const headerHTML = document.querySelectorAll('.header');
 const hideRightHTML = document.querySelectorAll('.hidden-right');
