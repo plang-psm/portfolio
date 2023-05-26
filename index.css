@@ -469,6 +469,7 @@ button:hover,
 }
 
 .project-display {
+  max-width: 525px;
   background-size: cover;
   padding: 0;
   margin: 4em 0;
@@ -560,13 +561,13 @@ button:hover,
   border: 1px solid white;
 }
 
-@media (min-width: 560px) {
+/* @media (min-width: 560px) {
   .project-display {
     max-width: 560px;
   }
   .image {
   }
-}
+} */
 
 @media (min-width: 768px) {
   .project-display {
