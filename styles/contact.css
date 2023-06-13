@@ -186,7 +186,6 @@ nav {
   width: 100%;
   display: flex;
   margin-top: 2em;
-  /* padding: 1em; */
   text-align: center;
 }
 .heading {
@@ -216,6 +215,7 @@ nav {
 
 .contact-container {
   margin: 0 auto;
+  padding-bottom: 2em;
   width: 100%;
   max-width: 620px;
   max-height: 667px;

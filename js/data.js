@@ -12,7 +12,7 @@ const projects = [
       'MongoDB',
       'Tailwind.css',
     ],
-    image: 'images/popv2.png',
+    image: '../images/popv2.png',
     alt: 'Image of popflix v2 project',
     live_link: 'https://popfliix.vercel.app',
     github_link: 'https://github.com/plang-psm/popflix-v2',
@@ -30,7 +30,7 @@ const projects = [
       'MongoDB',
       'Tailwind.css',
     ],
-    image: 'images/vrmsd.png',
+    image: '../images/vrmsd.png',
     alt: 'Image of VRMS project',
     live_link: 'https://vrms.io',
     github_link: 'https://github.com/plang-psm/VRMS',
@@ -39,7 +39,7 @@ const projects = [
   {
     name: 'Popflix v2',
     languages: ['HTML', 'CSS', 'JavaScript'],
-    image: 'images/h4lad.png',
+    image: '../images/h4lad.png',
     alt: 'Image of Hack for LA project',
     live_link: 'https://www.hackforla.org',
     github_link: 'https://github.com/hackforla/website',
@@ -48,7 +48,7 @@ const projects = [
   {
     name: 'Popflix v1',
     languages: ['HTML', 'CSS', 'JavaScript', 'React'],
-    image: 'images/popflix.png',
+    image: '../images/popflix.png',
     alt: 'Image of popflix project',
     live_link: 'https://plang-psm.github.io/popflix/',
     github_link: 'https://github.com/plang-psm/popflix',
@@ -57,7 +57,7 @@ const projects = [
   {
     name: 'Quizzical',
     languages: ['HTML', 'CSS', 'JavaScript', 'React'],
-    image: 'images/quizzical.png',
+    image: '../images/quizzical.png',
     alt: 'Image of quizzical project',
     live_link: 'https://plang-psm.github.io/quizzical/',
     github_link: 'https://github.com/plang-psm/quizzical',
@@ -66,7 +66,7 @@ const projects = [
   {
     name: 'Unit Converter',
     languages: ['HTML', 'CSS', 'JavaScript'],
-    image: 'images/unitconverter.jpg',
+    image: '../images/unitconverter.jpg',
     alt: 'Image of unit converter project',
     live_link: 'https://plang-psm.github.io/unit-conversion/',
     github_link: 'https://github.com/plang-psm/unit-conversion',
@@ -75,7 +75,7 @@ const projects = [
   {
     name: 'Password Generator',
     languages: ['HTML', 'CSS', 'JavaScript'],
-    image: 'images/pwg-gen.jpg',
+    image: '../images/pwg-gen.jpg',
     alt: 'Image of password-generator project',
     live_link: 'https://plang-psm.github.io/password-generator/',
     github_link: 'https://github.com/plang-psm/password-generator',
@@ -84,7 +84,7 @@ const projects = [
   {
     name: 'WGU Parcel Service',
     languages: ['Python'],
-    image: 'images/wgups.jpg',
+    image: '../images/wgups.jpg',
     alt: 'Image of WGUPS project',
     live_link: 'https://github.com/plang-psm/wgu-parcel-service',
     github_link: 'https://github.com/plang-psm/wgu-parcel-service',
@@ -93,7 +93,7 @@ const projects = [
   {
     name: 'Appointment Manager',
     languages: ['Java', 'SQL', 'MySQL', 'JavaFx', 'SceneBuilder'],
-    image: 'images/appointments.jpg',
+    image: '../images/appointments.jpg',
     alt: 'Image of appointment manager project',
     live_link: 'https://github.com/plang-psm/Appointment-Manager',
     github_link: 'https://github.com/plang-psm/Appointment-Manager',
