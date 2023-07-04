@@ -19,6 +19,26 @@ const projects = [
     type: ['Full Stack, Frontend, Backend'],
   },
   {
+    name: 'The Open Book',
+    languages: [
+      'HTML',
+      'JavaScript',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Materialize.css',
+      'Handlebars.js',
+      'Passport.js',
+      'OAuth',
+      'Railway',
+    ],
+    image: '../images/top.png',
+    alt: 'Image of the open book project',
+    live_link: 'https://the-open-book-production.up.railway.app/',
+    github_link: 'https://github.com/plang-psm/the-open-book',
+    type: ['Full Stack, Frontend, Backend'],
+  },
+  {
     name: 'VRMS',
     languages: [
       'HTML',
