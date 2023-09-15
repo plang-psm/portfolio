@@ -199,6 +199,7 @@ nav {
 .container {
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .contact-info-container {
@@ -207,8 +208,14 @@ nav {
 
 /* -------------- Info structure  -------------- */
 .info {
-  margin: 2em auto;
+  margin: 1em auto;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.info p {
+  padding: 0.5em;
 }
 
 /* -------------- Contact structure  -------------- */
@@ -251,6 +258,8 @@ nav {
 
 /* -------------- Footer Design  -------------- */
 .footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   padding: 3em;
   background-color: black;
