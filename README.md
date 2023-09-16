@@ -43,7 +43,7 @@ The portfolio is a static page that consists of 5 main sections including the he
 
 ## Launch
 You can open the project here:
-[Portfolio](https://plang-psm.github.io/portfolio/)
+[Portfolio](https://www.psicode.dev/)
 
 ## Contact
 <a href='https://www.linkedin.com/in/plang-psm/' target='_blank'><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn tag" /></a>
